@@ -1,0 +1,224 @@
+*{
+    margin: 0; /*for any site pute margin 0*/
+    font-family: Arial;
+    border: border-box;
+}
+/*box 1*/
+
+.navbar{
+    height: 60px; /*inspect the original site and see measurements from there*/
+    background-color: #0f1111;/*color bhi site sa inspect*/
+    color: white;
+    display: flex; /*sab horizontally same line ma*/
+    align-items: center;/*sab items beech ma ho*/
+    justify-content: space-evenly; /*sara elements ka beech ma same space*/
+}
+/*same div ka elements ko agr same line ma lana ho to flex krdo*/
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+    background-image:url("amazon_logo.png");
+    background-size:cover; /*puri imagine fit in space*/
+    height: 50px;
+    width: 100%;
+}
+.border{
+    border: 2px solid transparent; /*sab elements ka paas ek transparent border hoga*/
+}
+
+.border:hover{
+    border: 2px solid white; /*jaisa hi element pe arrow laya(hover) white border around it appears*/
+} 
+
+/*box 2*/
+
+.add-first{ /*for deliver to*/
+    color: #cccccc;
+    font-size:0.85rem ;
+    margin-left: 15px; /*icon ka thoda right ma ha so left sa margin dedo*/
+}
+.add-second{/*for india*/
+    font-size: 1rem;
+    margin-left: 3px;
+}
+.add-icon{
+    display: flex; /*to get icon and india in same line*/
+    align-items: center;
+}
+
+/*box 3*/
+
+.nav-search{
+   display: flex; /*all items of search box in same line*/
+   justify-content: space-evenly; /*search box ma sab evenly faila*/
+   width: 620px;
+   height: 40px;
+   border-radius: 4px; /*search box curve at corners*/
+}
+
+.nav-search:hover{ /*jab search bar pe arrow to orange border*/
+  border: 2px solid orange;
+}
+.search-select{ /*drop down*/
+   background-color: #f3f3f3;
+   width: 50px;
+   text-align: center;
+   border-top-left-radius: 4px; /*sirf left sa round h coz right ma search bar h*/
+   border-bottom-left-radius: 4px;
+   border: none;
+}
+.search-input{ /*search bar*/
+    width: 100%; /*bacha hua sab search bar occupy krega*/
+    font-size: 1rem;
+    border: none; /*by default vala border remove*/
+}
+
+.search-icon{ /*icon beside search bar*/
+  width: 45px; /*sab inspect sa pata kro*/
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: #febd68;
+  border-top-right-radius: 4px; /*sirf right sa round h*/
+  border-bottom-right-radius: 4px;
+  color: #0f1111;
+}
+
+/*box 4*/
+.span{
+    font-size:0.7rem;
+}
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/*box 6*/
+.nav-cart i{ /*sirf is box ka icon pe apply*/
+   font-size: 30px;
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.panel{ /*below navbar*/
+  background-color: #232f3e;
+  height: 39px;
+  color: white;
+  display: flex; /*sab horizontally same line ma*/
+  align-items:center;
+  justify-content: space-evenly; /*sara elements ka beech ma same space*/
+}
+
+.panel-ops{
+  background-color: #232f3e;
+  height: 39px;
+  width: 90%;
+  color: white;
+  font-size: 0.85rem;
+  display: flex; 
+  align-items:center;
+  margin: 5px 0px 6px;
+  justify-content:space-evenly;
+}
+
+/*main section*/
+.hero-section{
+  background-image:url("\https://images-eu.ssl-images-amazon.com/images/G/31/IN-Events/Jan24ARTTeaser1/GW/PC_HERO_EM_EN_2X._CB584799618_.jpg");
+  background-size: cover; /*image fits*/
+  height: 350px; /*from inspect*/
+}
+
+.shop-section{
+    display: flex; /*all boxes in same line*/
+    justify-content: space-evenly; /*space between boxes*/
+    background-color: #e3e6e6;
+    flex-wrap: wrap; /*ek row ma 4 aya baki boxes neecha*/
+}
+.box{
+   height: 400px; /*box for image and content*/
+   width: 23%;
+   background-color: white;
+   padding: 20px 0px 15px;
+   margin-top: 15px;
+}
+.box-img{ /*image in box*/
+  height: 300px;
+  background-size: cover;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-content p{ /*text inside box*/
+ color: #007185;
+}
+
+/*footer*/
+.footer{
+    margin-top: 15px; /*main content sa gap*/
+}
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 0.85rem;
+}
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 500px;
+    justify-content: space-evenly;
+    display: flex; /*sari lists ek dusra ka bagal ma*/
+ 
+}
+
+ul{
+    margin-top: 20px;
+}
+ul a{ /*lists ka anchor tags block form i.e. ek ka neecha ek aya*/
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+.foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo{
+    background-image:url("amazon_logo.png");
+    background-size:cover; /*puri imagine fit in space*/
+    height: 50px;
+    width: 100px;
+}
+
+.foot-panel4{
+    background-color:#0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;}
+
+.pages{
+    padding-top: 25px;
+}
+.copyright{
+    padding-top: 5px;
+}
